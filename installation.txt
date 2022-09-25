@@ -1,0 +1,18 @@
+Depois de aceitar os termos de uso do MySQL,marque a instalação customizada e selecione as seguintes opções:
+- MySQL Server 5.7.20 - X86
+- MySQL Workbench 6.3.9 - X64
+- MySQL Shell 1.0.10 - X64
+- Connector/ODBC 5.3.9 - X64
+- MySQL Documentation 5.7.20 - X86
+- Samples and Examples 5.7.20 - X86
+
+Depois que instalar as dependências e configurações, na etapa Type and Networking, selecione a opção: Standalone MySQL Server/Classic MySQL Replication.
+
+OBS: Na opção Standalone, o banco de dados fica na mesma máquina onde o "client" (o programa para acessar o banco de dados) é instalado.
+Outra configuração possível é instalar o "client" em uma máquina real para acessar uma máquina virtual onde fica o banco de dados.
+
+A opção de cluster é ideal para quando há muito processamento, processamento pesado para lidar com muitos dados. Nessa situação haverá um parque de máquinas com várias máquinas com o MySQL instalado. Mas o usuário não vai saber disso. Essa configuração para ele é "transparente" (ele não tem que se preocupar com isso). Quando o usuário acessar um dado, o cluster vai intervir e escolher qual máquina vai receber o acesso do usuário.
+
+A porta padrão do MySQL é 3306.
+A senha de root para esse curso é: 1234.
+Também criei um usuário com papel de DB Admin: mahonri, senha: 1234
