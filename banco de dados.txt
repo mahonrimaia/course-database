@@ -1,0 +1,20 @@
+O que é o banco de dados.
+São arquivos normais que são salvos no HD.
+A medida que a gente vai salvando informações nesse banco, o banco vai aumentando seu espaço ocupado na máquina.
+
+SGBD - Sistema de Gerenciamento de Banco de Dados
+O MySQL é um SGBD.
+
+show variables like 'datadir';
+
+Seção 2 - Um pouco de teoria, sem esquecer a prática!
+O banco é composto por tabelas.
+
+Um sistema surge quando não há uma solução satisfatória no mercado para uma dada necessidade de uma empresa.
+O banco de dados serve para salvar os dados desse sistema.
+
+A primeira coisa para se fazer é determinar quais são os requisitos desse software/sistema. Quais são as necessidades? Quais dados são necessários?
+
+Todo projeto possui um escopo: onde começa e onde termina. E esse escopo precisa ser bem definido para não haver desperdício de tempo para a conclusão do projeto.
+
+No MySQL, comentários são feitos com símbolo de tralha (#).
