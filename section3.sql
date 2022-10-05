@@ -60,3 +60,14 @@ SELECT nome AS cliente, sexo, email FROM cliente;
 /* O ASTERISCO (*) REALIZA UM FULLSCAN NO BANCO, ELE IGNORA ÍNDICES QUE OTIMIZAM AS BUSCAS NO BANCO, PERFORMATICAMENTE FALANDO ISSO É PÉSSIMO */
 
 SELECT email, sexo, endereco, nome, NOW() AS data_hora FROM cliente;
+
+/* FILTRO A NÍVEL DE LINHA (ATÉ AGORA OS SELECTS ERAM A NÍVEL DE COLUNA) */
+/* PARA PROJEÇÃO TEMOS O SELECT */
+/* PARA SELEÇÃO TEMOS O WHERE (ONDE) */
+SELECT nome, sexo FROM cliente WHERE sexo = 'M';
+SELECT nome, sexo FROM cliente WHERE sexo = 'F';
+
+/* PARA FILTRAR POR APROXIMAÇÃO, USAMOS O LIKE NO LUGAR DA IGUALDADE, PORÉM ELE DEGRADA A PERFORMANCE */
+SELECT nome, sexo FROM cliente WHERE endereco LIKE 'RJ';
+SELECT nome, sexo, endereco FROM cliente WHERE endereco LIKE '%RJ';
+SELECT nome, sexo, endereco FROM cliente WHERE endereco LIKE '%CENTRO%';
