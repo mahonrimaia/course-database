@@ -85,7 +85,7 @@ Por exemplo: colunas de gênero (M ou F), colunas de verdadeiro ou falso (1 ou 0
 Por exemplo: o gênero pode ser armazenado de várias formas, M, Masc, Masculino, F, Fem, Feminino. Todas essas possibilidades podem acabam gerando confusão na hora de armazenar esses valores. Por isso existe o ENUM. Ele vai listar as possíveis opções de modo a controlar quais valores são permitidos naquela coluna. Por exemplo, a coluna pode ser limitada a aceitar apenas M ou F ao invés de aceitar Masculino e Feminino. Ele funciona como um ComboBox, onde aparecem as opções possíveis e o usuário não tem que digitar nada. Ou seja, os dados que entrarão naquela coluna não estarão fora do conjunto definido.
  */
 
-/* TIPOs NUMÉRICOS: INT e FLOAT
+/* TIPOS NUMÉRICOS: INT e FLOAT
 O FLOAT é o tipo numérico usado para representar números reais (números com casas decimais). Serve para representar números com precisão. Quanto mais casas decimais mais precisão. A quantidade de casas é passada por parâmetro. Exemplo: FLOAT(10,2) quer dizer que haverá números com até 10 casas onde 2 ficarão à direita da vírgula. FLOAT(7,3) quer dizer que haverá números com até 7 casas onde 3 casas ficarão à direita da vírgula.
 
 O INT é usado para representar números inteiros. E ele possui um limite de no máximo 11 caracteres. Para números que não são usados para cálculos, o ideal é não usar o INT e sim outro tipo como o VARCHAR. Exemplo: usar VARCHAR para armazenar CPFs e CNPJs.
