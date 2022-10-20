@@ -21,5 +21,4 @@ GROUP BY sexo;
 Numa query usando OR, coloquei como primeiro statement o campo que tem maior porcentagem de ser encontrado, isso vai diminuir uma segunda verificação em uma mesma linha já que pela lógica ou basta um dos dois ser verdadeiro para entrar como resultado da consulta.
 
 Usando o AND, a lógica é a inversa, pois para entrar como resultado em uma lógica AND, os dois campos precisam ser verdadeiros. Por exemplo, se numa tabela estamos procurando por registros onde o sexo seja feminino e a cidade seja RJ, e sabemos que toda a base 70% são do sexo feminino e 30% são da cidade RJ, então colocamos RJ como primeiro statement para deixar a query mais performática (mais rápida).
-
 */
